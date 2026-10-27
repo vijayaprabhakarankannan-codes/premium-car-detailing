@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gloss Garage | Premium Car Detailing</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101010;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #080808;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d4ff00;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+    }
+
+    .hero {
+      min-height: 520px;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, #000000 15%, #000000aa 65%, #00000055),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
+
+    .highlight {
+      color: #d4ff00;
+    }
+
+    .hero p {
+      color: #dddddd;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d4ff00;
+      color: #111111;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .section-description {
+      text-align: center;
+      color: #bbbbbb;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #1c1c1c;
+      border: 1px solid #333333;
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .service-card h3 {
+      color: #d4ff00;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #cccccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #1c1c1c;
+    }
+
+    .contact p {
+      color: #cccccc;
+      margin: 12px 0 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #aaaaaa;
+      background: #080808;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 75px 8%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">GLOSS GARAGE</div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="highlight">PREMIUM CAR CARE STUDIO</p>
+
+        <h1>Bring Back That <span class="highlight">Showroom Shine.</span></h1>
+
+        <p>
+          Professional ceramic coating, paint correction and detailing
+          to protect your car and make it shine.
+        </p>
+
+        <a class="button" href="#contact">Book Your Detail</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-description">
+        Quality care for every part of your vehicle.
+      </p>
+
+      <div class="services">
+        <article class="service-card">
+          <h3>Ceramic Coating</h3>
+          <p>Long-lasting paint protection with a glossy finish.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Paint Correction</h3>
+          <p>Improve paint clarity and reduce visible swirl marks.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Premium Polishing</h3>
+          <p>Restore shine and refresh your car's appearance.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Interior Detailing</h3>
+          <p>Deep cleaning for a fresh, comfortable cabin.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2 class="section-title">The Gloss Gallery</h2>
+      <p class="section-description">
+        A glimpse of the automotive finish we love.
+      </p>
+
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+          alt="Sports car exterior">
+
+        <img
+          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
+          alt="Premium car">
+
+        <img
+          src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80"
+          alt="Luxury automobile">
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Ready for the Gloss?</h2>
+      <p>Contact our studio to discuss your car detailing needs.</p>
+      <a class="button" href="mailto:hello@example.com">
+        Contact Our Studio
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Gloss Garage | Premium Car Detailing</p>
+  </footer>
+</body>
+</html>
