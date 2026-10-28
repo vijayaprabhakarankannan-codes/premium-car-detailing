@@ -1,20 +1,18 @@
-HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#071526">
+  <meta name="description" content="Vijay Gloss Garage offers premium car detailing, paint protection, interior care and automotive accessories.">
 
   <title>Vijay Gloss Garage | Luxury Car Detailing</title>
-
-  <meta name="description" content="Vijay Gloss Garage offers premium car detailing, ceramic coating, paint correction, luxury car care, audio upgrades and accessories.">
 
   <style>
     :root {
       --bg: #07111f;
       --surface: #0d1d30;
-      --surface-light: #132942;
       --blue: #168bff;
       --blue-light: #62b5ff;
       --text: #f4f8ff;
@@ -23,9 +21,9 @@ HTML
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
@@ -51,44 +49,44 @@ HTML
 
     .container {
       width: min(1120px, 90%);
-      margin: auto;
+      margin: 0 auto;
     }
 
     header {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(7, 17, 31, 0.94);
+      background: rgba(7, 17, 31, 0.96);
       border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(12px);
     }
 
     nav {
       min-height: 76px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 20px;
       flex-wrap: wrap;
       padding: 14px 0;
     }
 
     .logo {
-      font-size: 1.15rem;
-      font-weight: 900;
+      font-size: 1.1rem;
+      font-weight: 800;
       letter-spacing: 1px;
     }
 
-    .logo span {
+    .logo span,
+    h1 span {
       color: var(--blue-light);
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
       flex-wrap: wrap;
-      font-size: 0.9rem;
+      gap: 18px;
       color: var(--muted);
+      font-size: 0.9rem;
     }
 
     .nav-links a:hover {
@@ -97,12 +95,12 @@ HTML
 
     .button {
       display: inline-block;
-      background: var(--blue);
-      color: white;
       padding: 12px 22px;
       border-radius: 6px;
-      font-weight: bold;
-      transition: 0.2s;
+      background: var(--blue);
+      color: white;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.2s;
     }
 
     .button:hover {
@@ -116,122 +114,121 @@ HTML
       color: var(--blue-light);
     }
 
-    .button-outline:hover {
-      background: var(--blue);
-      color: white;
-    }
-
     .hero {
-      min-height: 620px;
+      min-height: 600px;
       display: flex;
       align-items: center;
       background:
-        linear-gradient(
-          90deg,
-          rgba(7, 17, 31, 0.97) 0%,
-          rgba(7, 17, 31, 0.78) 48%,
-          rgba(7, 17, 31, 0.2) 100%
-        ),
-        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85")
-        center 55% / cover no-repeat;
+        linear-gradient(90deg, rgba(7, 17, 31, 0.97), rgba(7, 17, 31, 0.55)),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80") center / cover no-repeat;
     }
 
     .hero-content {
-      max-width: 700px;
-      padding: 90px 0;
+      max-width: 720px;
+      padding: 80px 0;
     }
 
     .eyebrow {
       color: var(--blue-light);
-      text-transform: uppercase;
       font-size: 0.8rem;
+      font-weight: 700;
       letter-spacing: 3px;
-      font-weight: bold;
-      margin-bottom: 18px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
     }
 
     .docker-badge {
       display: inline-block;
-      color: var(--blue-light);
-      background: rgba(22, 139, 255, 0.12);
+      padding: 5px 12px;
+      margin-bottom: 18px;
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 6px 12px;
-      margin-bottom: 18px;
+      background: rgba(22, 139, 255, 0.12);
+      color: var(--blue-light);
       font-size: 0.85rem;
     }
 
     h1 {
-      font-size: clamp(2.6rem, 6vw, 5rem);
-      line-height: 1.08;
       margin-bottom: 22px;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.1;
     }
 
-    h1 span {
-      color: var(--blue-light);
-    }
-
-    .hero p {
+    .hero-description {
+      max-width: 570px;
+      margin-bottom: 28px;
       color: #d0dbea;
       font-size: 1.1rem;
-      max-width: 570px;
-      margin-bottom: 30px;
     }
 
     .hero-buttons {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
+      gap: 14px;
     }
 
     section {
-      padding: 85px 0;
-      scroll-margin-top: 85px;
+      padding: 80px 0;
+      scroll-margin-top: 90px;
     }
 
     .section-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      text-align: center;
       margin-bottom: 12px;
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
     }
 
     .section-description {
+      max-width: 680px;
+      margin: 0 auto 38px;
       color: var(--muted);
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 42px;
     }
 
-    .services-grid {
+    .services-grid,
+    .gallery,
+    .accessories-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
+      gap: 22px;
+    }
+
+    .service-card,
+    .car-card,
+    .accessory-card,
+    .contact-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
     }
 
     .service-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 28px;
-      border-radius: 10px;
-      transition: 0.25s;
+      padding: 26px;
+      transition: transform 0.2s, border-color 0.2s;
     }
 
-    .service-card:hover {
+    .service-card:hover,
+    .car-card:hover {
+      transform: translateY(-4px);
       border-color: var(--blue-light);
-      transform: translateY(-5px);
     }
 
     .service-icon {
+      margin-bottom: 12px;
       font-size: 2rem;
-      margin-bottom: 15px;
     }
 
-    .service-card h3 {
+    .service-card h3,
+    .accessory-card h3 {
+      margin-bottom: 8px;
       color: var(--blue-light);
-      margin-bottom: 10px;
     }
 
-    .service-card p {
+    .service-card p,
+    .car-info p,
+    .accessory-card p,
+    .contact-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
@@ -240,129 +237,69 @@ HTML
       background: #09192b;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 22px;
-    }
-
     .car-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 0.25s;
+      transition: transform 0.2s, border-color 0.2s;
     }
 
-    .car-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--blue-light);
-    }
-
-    .car-card img {
-      height: 230px;
+    .car-card img,
+    .accessory-card img {
+      height: 220px;
       object-fit: cover;
-      background: var(--surface-light);
+      background: var(--surface);
     }
 
-    .car-info {
+    .car-info,
+    .accessory-info {
       padding: 20px;
-    }
-
-    .car-info h3 {
-      font-size: 1.15rem;
-      margin-bottom: 7px;
-    }
-
-    .car-info p {
-      color: var(--muted);
-      font-size: 0.92rem;
     }
 
     .tag {
       display: inline-block;
-      color: var(--blue-light);
-      background: rgba(22, 139, 255, 0.12);
-      padding: 5px 9px;
+      margin-bottom: 9px;
+      padding: 4px 9px;
       border-radius: 4px;
-      font-size: 0.75rem;
-      margin-bottom: 10px;
-    }
-
-    .accessories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-    }
-
-    .accessory-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .accessory-card img {
-      height: 210px;
-      object-fit: cover;
-      background: var(--surface-light);
-    }
-
-    .accessory-card div {
-      padding: 20px;
-    }
-
-    .accessory-card h3 {
+      background: rgba(22, 139, 255, 0.12);
       color: var(--blue-light);
-      margin-bottom: 8px;
+      font-size: 0.75rem;
     }
 
-    .accessory-card p {
-      color: var(--muted);
-      font-size: 0.92rem;
+    .car-info h3 {
+      margin-bottom: 7px;
+      font-size: 1.1rem;
     }
 
     .cta {
-      background: linear-gradient(135deg, #0c2c4e, #0d1d30);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
+      background: linear-gradient(135deg, #0c2c4e, #0d1d30);
       text-align: center;
     }
 
     .cta p {
       max-width: 650px;
+      margin: 0 auto 24px;
       color: var(--muted);
-      margin: 0 auto 25px;
     }
 
     .contact-details {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      margin-top: 35px;
     }
 
     .contact-card {
-      padding: 25px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      padding: 24px;
     }
 
     .contact-card h3 {
-      color: var(--blue-light);
       margin-bottom: 8px;
-    }
-
-    .contact-card p {
-      color: var(--muted);
-      overflow-wrap: anywhere;
+      color: var(--blue-light);
     }
 
     footer {
-      padding: 28px 0;
-      text-align: center;
+      padding: 26px 0;
       color: var(--muted);
+      text-align: center;
       font-size: 0.85rem;
     }
 
@@ -373,15 +310,15 @@ HTML
 
       .nav-links {
         justify-content: center;
-        gap: 14px;
+        gap: 12px;
       }
 
       .hero {
-        min-height: 540px;
+        min-height: 520px;
       }
 
       section {
-        padding: 60px 0;
+        padding: 58px 0;
       }
     }
   </style>
@@ -390,7 +327,7 @@ HTML
 <body>
   <header>
     <nav class="container">
-      <a href="#home" class="logo">VIJAY <span>GLOSS GARAGE</span></a>
+      <a class="logo" href="#home">VIJAY <span>GLOSS GARAGE</span></a>
 
       <div class="nav-links">
         <a href="#home">Home</a>
@@ -406,16 +343,16 @@ HTML
     <section class="hero" id="home">
       <div class="container hero-content">
         <div class="eyebrow">Premium Automotive Care</div>
-        <p class="docker-badge">Docker Learning Preview • Version 2</p>
+        <div class="docker-badge">Docker Learning Preview - Version 2</div>
 
         <h1>
           Luxury Cars.<br>
           <span>Exceptional Shine.</span>
         </h1>
 
-        <p>
+        <p class="hero-description">
           Give your car the attention it deserves with premium detailing,
-          paint protection, interior care, custom audio upgrades and accessories.
+          paint protection, interior care, audio upgrades and accessories.
         </p>
 
         <div class="hero-buttons">
@@ -448,7 +385,7 @@ HTML
           <article class="service-card">
             <div class="service-icon">🚘</div>
             <h3>Premium Polishing</h3>
-            <p>Restore a smooth, glossy finish with professional polishing.</p>
+            <p>Bring out a glossy finish with professional polishing.</p>
           </article>
 
           <article class="service-card">
@@ -476,47 +413,47 @@ HTML
       <div class="container">
         <h2 class="section-title">Luxury Cars Gallery</h2>
         <p class="section-description">
-          Inspired by premium sports cars and luxury SUVs.
-          These are illustrative gallery images, not a claim about completed customer jobs.
+          Explore premium automotive styling and detailing inspiration.
+          Images are illustrative examples, not customer-work claims.
         </p>
 
         <div class="gallery">
           <article class="car-card">
             <img
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85"
-              alt="Luxury sports car with a sleek design"
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+              alt="Luxury sports car"
               loading="lazy">
 
             <div class="car-info">
               <span class="tag">SPORTS CAR</span>
-              <h3>Porsche-Inspired Styling</h3>
-              <p>Explore the sleek lines and glossy finish of premium sports cars.</p>
+              <h3>Sports Car Styling</h3>
+              <p>Discover sleek design and glossy automotive finishes.</p>
             </div>
           </article>
 
           <article class="car-card">
             <img
-              src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85"
-              alt="Premium luxury SUV"
+              src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80"
+              alt="Premium sport utility vehicle"
               loading="lazy">
 
             <div class="car-info">
               <span class="tag">LUXURY SUV</span>
-              <h3>Range Rover-Inspired Style</h3>
-              <p>Bold SUV presence paired with a clean, premium appearance.</p>
+              <h3>Luxury SUV Styling</h3>
+              <p>Bold styling and a premium appearance for your vehicle.</p>
             </div>
           </article>
 
           <article class="car-card">
             <img
-              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85"
-              alt="Premium car displayed outdoors"
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80"
+              alt="Premium automobile outdoors"
               loading="lazy">
 
             <div class="car-info">
-              <span class="tag">PREMIUM DETAILING</span>
-              <h3>Gloss &amp; Paint Care</h3>
-              <p>Showcase the finish that professional vehicle care can help achieve.</p>
+              <span class="tag">PAINT CARE</span>
+              <h3>Gloss and Paint Care</h3>
+              <p>Explore ideas for keeping your vehicle looking its best.</p>
             </div>
           </article>
         </div>
@@ -525,45 +462,45 @@ HTML
 
     <section id="accessories">
       <div class="container">
-        <h2 class="section-title">Audio &amp; Accessories</h2>
+        <h2 class="section-title">Audio and Accessories</h2>
         <p class="section-description">
-          Upgrade your driving experience with audio equipment and car-care essentials.
+          Explore upgrades and accessories for your driving experience.
         </p>
 
         <div class="accessories-grid">
           <article class="accessory-card">
             <img
-              src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=85"
-              alt="Car interior and detailing care"
+              src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80"
+              alt="Automotive cleaning and care"
               loading="lazy">
 
-            <div>
+            <div class="accessory-info">
               <h3>Interior Care</h3>
-              <p>Products and services to help keep your cabin looking fresh.</p>
+              <p>Keep your cabin clean and refreshed with regular care.</p>
             </div>
           </article>
 
           <article class="accessory-card">
             <img
-              src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=85"
-              alt="Automotive wheel and styling detail"
+              src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80"
+              alt="Automotive wheel and styling"
               loading="lazy">
 
-            <div>
+            <div class="accessory-info">
               <h3>Car Styling</h3>
-              <p>Explore vehicle styling ideas and accessories for a personalized look.</p>
+              <p>Explore styling ideas and accessories for a personalized look.</p>
             </div>
           </article>
 
           <article class="accessory-card">
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85"
-              alt="Automotive equipment"
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
+              alt="Automotive equipment and accessories"
               loading="lazy">
 
-            <div>
-              <h3>Audio &amp; Upgrades</h3>
-              <p>Ask us about three-way speakers and compatible audio upgrades.</p>
+            <div class="accessory-info">
+              <h3>Audio and Upgrades</h3>
+              <p>Ask about compatible speaker systems and audio upgrades.</p>
             </div>
           </article>
         </div>
@@ -595,13 +532,13 @@ HTML
           </div>
 
           <div class="contact-card">
-            <h3>Audio &amp; Accessories</h3>
+            <h3>Audio and Accessories</h3>
             <p>Ask about three-way audio systems and car accessories.</p>
           </div>
 
           <div class="contact-card">
             <h3>Bookings</h3>
-            <p>Please add your business phone number and location here.</p>
+            <p>Add your business phone number and location here.</p>
           </div>
         </div>
       </div>
