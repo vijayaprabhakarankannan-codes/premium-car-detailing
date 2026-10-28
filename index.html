@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,9 +126,12 @@
       display: flex;
       align-items: center;
       background:
-        linear-gradient(90deg, rgba(7, 17, 31, 0.97) 0%,
-        rgba(7, 17, 31, 0.78) 48%,
-        rgba(7, 17, 31, 0.2) 100%),
+        linear-gradient(
+          90deg,
+          rgba(7, 17, 31, 0.97) 0%,
+          rgba(7, 17, 31, 0.78) 48%,
+          rgba(7, 17, 31, 0.2) 100%
+        ),
         url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85")
         center 55% / cover no-repeat;
     }
@@ -145,6 +148,17 @@
       letter-spacing: 3px;
       font-weight: bold;
       margin-bottom: 18px;
+    }
+
+    .docker-badge {
+      display: inline-block;
+      color: var(--blue-light);
+      background: rgba(22, 139, 255, 0.12);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      margin-bottom: 18px;
+      font-size: 0.85rem;
     }
 
     h1 {
@@ -374,7 +388,6 @@
 </head>
 
 <body>
-
   <header>
     <nav class="container">
       <a href="#home" class="logo">VIJAY <span>GLOSS GARAGE</span></a>
@@ -393,6 +406,7 @@
     <section class="hero" id="home">
       <div class="container hero-content">
         <div class="eyebrow">Premium Automotive Care</div>
+        <p class="docker-badge">Docker Learning Preview • Version 2</p>
 
         <h1>
           Luxury Cars.<br>
@@ -501,7 +515,7 @@
 
             <div class="car-info">
               <span class="tag">PREMIUM DETAILING</span>
-              <h3>Gloss & Paint Care</h3>
+              <h3>Gloss &amp; Paint Care</h3>
               <p>Showcase the finish that professional vehicle care can help achieve.</p>
             </div>
           </article>
@@ -511,7 +525,7 @@
 
     <section id="accessories">
       <div class="container">
-        <h2 class="section-title">Audio & Accessories</h2>
+        <h2 class="section-title">Audio &amp; Accessories</h2>
         <p class="section-description">
           Upgrade your driving experience with audio equipment and car-care essentials.
         </p>
@@ -548,7 +562,7 @@
               loading="lazy">
 
             <div>
-              <h3>Audio & Upgrades</h3>
+              <h3>Audio &amp; Upgrades</h3>
               <p>Ask us about three-way speakers and compatible audio upgrades.</p>
             </div>
           </article>
@@ -581,7 +595,7 @@
           </div>
 
           <div class="contact-card">
-            <h3>Audio & Accessories</h3>
+            <h3>Audio &amp; Accessories</h3>
             <p>Ask about three-way audio systems and car accessories.</p>
           </div>
 
@@ -600,6 +614,6 @@
       <p>Premium care. Powerful shine. Exceptional style.</p>
     </div>
   </footer>
-
 </body>
 </html>
+```
